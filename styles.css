@@ -1,0 +1,61 @@
+ /*homepage*/
+body {
+    margin: 0;
+    padding: 0px;
+    max-width: 1140px;
+    height: auto;
+}
+
+.logo {
+    width: 300px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links{
+    position: relative;
+    float: right;
+    margin-top: 200px;
+    
+    
+}
+
+.background-image {
+    background-image: url(/images/Girlrunning.jpeg);
+    width: 100%;
+    height: auto;
+}
+
+
+    
+
+
+
+
+
+
+    
+    
+
+    
+
