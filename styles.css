@@ -1,16 +1,22 @@
  /*homepage*/
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding: 0px;
-    max-width: 1140px;
-    height: auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .logo {
-    width: 300px;
-    float: left;
-    padding: 20px;
-    margin: 20px;
+    width: 20%;
+    margin: 10px;
 }
 
 
@@ -21,41 +27,157 @@ a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    margin: 10px;
     text-transform: uppercase;
-    font-weight: bold;
+    
     
     
 }
 
+.fas{
+margin-bottom: auto; 
+}
+
+.search-bar {
+    margin-bottom: 10px;
+}
 .nav-links a:hover {
     text-decoration: underline;
 }
 
 .nav-links{
-    position: relative;
-    float: right;
-    margin-top: 200px;
+   display: flex;
+   align-items: end;
     
     
 }
 
-.background-image {
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+.background-image { 
     background-image: url(/images/Girlrunning.jpeg);
-    width: 100%;
-    height: auto;
+    position: relative;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cta-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #2AD5C0;
+    font-size: 2rem;
+    padding: 20px;
+    font-weight: bold;
 }
 
 
+footer {
+    text-align: center;
+}
     
+.footer-links a:hover{
+    text-decoration: underline;
+
+}    
+
+.footer-links {
+    padding: 10px;
+}
+
+/*Jackets Page*/
 
 
 
+.jacket-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-
-
+.jacket-product {
+    Width: 30%;
+    Flex-grow: 1;
+    Padding: 30px;
+    Box-sizing: border-box;
+    Text-align: center;
     
     
+}
 
+.jackets-page h1 {
+    text-align: left;
+}
+
+.gender-nav a:hover{
+    text-decoration: underline;
     
+}
 
+.class-cta {
+    background-color: #2AD5C0;
+    font-weight: bold;
+    padding: 10px 40px;
+}
+
+.gender-nav {
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+
+/*Gender Page*/
+
+.gender-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gender-products {
+    Width: 30%;
+    Flex-grow: 1;
+    Padding: 30px;
+    Box-sizing: border-box;
+    Text-align: center;
+
+}
+
+.gender-button {
+    background-color: #2AD5C0;
+    font-weight: bold;
+    padding: 10px 40px;
+}
+
+.gender-h1 {
+    margin-left: 20px;
+}
+
+
+/*spesific page*/
+
+.spesific-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spesific-product {
+    Width: 30%;
+    Flex-grow: 1;
+    Padding: 30px;
+    Box-sizing: border-box;
+    Text-align: center;
+}
+
+.spesific-header {
+    text-align: center;
+}
+
+.spesific-cta {
+    background-color: #2AD5C0;
+    font-weight: bold;
+    padding: 10px 40px;
+}
