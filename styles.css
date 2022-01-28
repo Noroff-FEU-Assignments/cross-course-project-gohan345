@@ -1,244 +1,241 @@
- /*homepage*/
+/*homepage*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    min-height: 100vh;
-    width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
 }
 
 header {
-    display: flex;
-    justify-content: space-evenly;
-
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .logo {
-    width: 20%;
-    margin: 10px;
+  width: 20%;
+  margin: 10px;
 }
-
-
-
 
 a {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    text-transform: uppercase;
-    
-    
-    
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
-.fas{
-margin-bottom: auto; 
+.fas {
+  margin-bottom: auto;
 }
 
 .search-bar {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .nav-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.nav-links{
-   display: flex;
-   align-items: end;
-    
-    
+.nav-links {
+  display: flex;
+  align-items: end;
 }
 
 .active {
-    text-decoration: underline;
-    font-weight: bold;
-    
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-.background-image { 
-    background-image: url(/images/Girlrunning.jpeg);
-    position: relative;
-    min-height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.background-image {
+  background-image: url(/images/Girlrunning.jpeg);
+  position: relative;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.cta-button{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #2AD5C0;
-    font-size: 2rem;
-    padding: 20px;
-    font-weight: bold;
+.cta-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #2ad5c0;
+  font-size: 2rem;
+  padding: 20px;
+  font-weight: bold;
 }
-
 
 footer {
-    text-align: center;
+  text-align: center;
 }
-    
-.footer-links a:hover{
-    text-decoration: underline;
 
-}    
+.footer-links a:hover {
+  text-decoration: underline;
+}
 
 .footer-links {
-    padding: 10px;
+  padding: 10px;
 }
 
 /*Jackets Page*/
 
-
-
-.jacket-list{
-    display: flex;
-    flex-wrap: wrap;
+.jacket-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .jacket-product {
-    Width: 30%;
-    Flex-grow: 1;
-    Padding: 30px;
-    Box-sizing: border-box;
-    Text-align: center;
-    
-    
+  width: 30%;
+  flex-grow: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .jackets-page h1 {
-    text-align: left;
+  text-align: left;
 }
 
-.gender-nav a:hover{
-    text-decoration: underline;
-    
+.gender-nav a:hover {
+  text-decoration: underline;
 }
 
 .class-cta {
-    background-color: #2AD5C0;
-    font-weight: bold;
-    padding: 10px 40px;
+  background-color: #2ad5c0;
+  font-weight: bold;
+  padding: 10px 40px;
 }
 
 .gender-nav {
-    margin-left: 20px;
-    font-size: 0.8em;
+  margin-left: 20px;
+  font-size: 0.8em;
 }
-
 
 /*Gender Page*/
 
-.gender-list{
-    display: flex;
-    flex-wrap: wrap;
+.gender-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gender-products {
-    Width: 30%;
-    Flex-grow: 1;
-    Padding: 30px;
-    Box-sizing: border-box;
-    Text-align: center;
-
+  width: 30%;
+  flex-grow: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .gender-button {
-    background-color: #2AD5C0;
-    font-weight: bold;
-    padding: 10px 40px;
+  background-color: #2ad5c0;
+  font-weight: bold;
+  padding: 10px 40px;
 }
 
 .gender-h1 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
-
 
 /*spesific page*/
 
 .spesific-list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .spesific-product {
-    Width: 30%;
-    Flex-grow: 1;
-    Padding: 30px;
-    Box-sizing: border-box;
-    Text-align: center;
+  width: 30%;
+  flex-grow: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .spesific-header {
-    text-align: center;
+  text-align: center;
 }
 
 .spesific-cta {
-    background-color: #2AD5C0;
-    font-weight: bold;
-    padding: 10px 40px;
+  background-color: #2ad5c0;
+  font-weight: bold;
+  padding: 10px 40px;
 }
 
 /*about page*/
 
 .tree-img {
-    width: 100%;
+  width: 100%;
 }
 
 .forest-background {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-
-    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-header {
-    text-align: center;
-    font-size: 2em;
-    
+  text-align: center;
+  font-size: 2em;
 }
 
 .box {
-    max-width: 400px;
-    text-align: center;
-    hyphens: auto;
-    
-
-    
+  max-width: 400px;
+  text-align: center;
+  hyphens: auto;
 }
-
 
 /*contact page*/
 
 .contact {
-    max-width: 1000px;
-    margin: auto;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .contact-form {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-form > * {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-form input {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-
 .contact-img {
-    margin: 30px
+  margin: 30px;
+}
+
+/*Checkout page*/
+
+.checkout-left {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkout-left > * {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.checkout-left input {
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.checkout-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.checkout-item img {
+  width: 10%;
 }
