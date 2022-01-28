@@ -1,60 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>RainyDays</title>
-  <script src="https://kit.fontawesome.com/9b22e4c2ba.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-   <img class="logo" src="/images/RainyDaysLogo (1).png" alt="Rainy Days Logo">
-     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="jackets.html">Jackets</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="checkout.html"class="active">Checkout</a>
-     <a href="search.html"> <i class="fas fa-search"></i> </a> 
-     <input class="search-bar" placeholder="Search" type="search" name="question"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>RainyDays</title>
+    <script
+      src="https://kit.fontawesome.com/9b22e4c2ba.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="/images/RainyDaysLogo (1).png"
+        alt="Rainy Days Logo"
+      />
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="jackets.html">Jackets</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="checkout.html" class="active">Checkout</a>
+        <a href="search.html"> <i class="fas fa-search"></i> </a>
+        <input
+          class="search-bar"
+          placeholder="Search"
+          type="search"
+          name="question"
+        />
       </nav>
     </header>
-    <main>
-        <h1>Checkout</h1> 
-        <h2>Billing Details</h2> 
+    <main class="checkout">
+      <h1>Checkout</h1>
+      <section class="checkout-main">
         <div class="checkout-item">
-          <img src="/images/rainjacket 6.png" alt="Blue jacket purhase">
-          <h3>Blue Raincoat</h3>
-          <h4>40$</h4>
-          <h4>Order Total</h4>
-          <h4>40$</h4>
+          <h2>Order Details</h2>
+          <div class="d-flex justify-between">
+            <img src="/images/rainjacket 6.png" alt="Blue jacket purhase" />
+            <h3>Blue Raincoat</h3>
+            <h4>40$</h4>
+          </div>
+          <div class="d-flex bt-gray justify-between">
+            <h4>Order Total</h4>
+            <h4>40$</h4>
+          </div>
           <h5>Payment Method</h5>
           <p>vipps: +4799104671</p>
-          <p>Visa</p> <i class="fab fa-cc-visa"></i>
-         </div>
-          
+          <div class="d-flex justify-left">
+            <p>Visa</p>
+            <i class="fab fa-cc-visa"></i>
+            <a href="confirmation.html" class="class-cta">Purchase</a>
+            <a href="jackets.html" class="class-cta">Cancel</a>
+          </div>
+        </div>
         <div class="checkout-left">
-        <form class="checkout-form">
+          <h2>Billing Details</h2>
+          <form class="checkout-form">
             <label for="name">Full Name:</label>
-            <input type="text" class="name-table" id="name">
+            <input type="text" class="name-table" id="name" />
             <label for="adress">Street Adress:</label>
-            <input type="text" class="street-table" id="adress">
+            <input type="text" class="street-table" id="adress" />
             <label for="adress">Email Adress (optional):</label>
-            <input type="text" class="email-table" id="email">
+            <input type="text" class="email-table" id="email" />
             <label for="region">Country and Region</label>
             <select name="countries" id="countries">
-            <option value="norway">Norway</option>
-            <option value="germany">Germany</option>
-            <option value="denmark">Denmark</option>
-            <a href="#" class="cta-class">Purchase</a>
-            <a href="#" class="cta-class">Cancel</a>
-            </form>
-           </div>
-      
-        
-    
-        
-
+              <option value="norway">Norway</option>
+              <option value="germany">Germany</option>
+              <option value="denmark">Denmark</option>
+            </select>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <h4>Social Media</h4>
+      <div>
+        <i class="fab fa-snapchat-ghost"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <span>&copy;</span>
+    </footer>
+  </body>
+</html>
