@@ -1,11 +1,15 @@
 /*homepage*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0;
   min-height: 100vh;
   width: 100%;
+}
+
+main h1 {
+  flex: 0 0 100%;
 }
 
 section {
@@ -43,7 +47,7 @@ a {
 }
 
 .search-bar {
-  margin-bottom: 10px;
+  height: 26px;
 }
 .nav-links a:hover {
   text-decoration: underline;
@@ -77,6 +81,11 @@ a {
   font-weight: bold;
 }
 
+.cta-button h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -108,10 +117,6 @@ footer h4 {
   padding: 30px;
   box-sizing: border-box;
   text-align: center;
-}
-
-.jackets-page h1 {
-  flex: 0 0 100%;
 }
 
 .jackets-page {
@@ -149,6 +154,14 @@ footer h4 {
 
 /*Gender Page*/
 
+.gender-main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto;
+}
+
 .gender-list {
   display: flex;
   flex-wrap: wrap;
@@ -166,10 +179,6 @@ footer h4 {
   background-color: #2ad5c0;
   font-weight: bold;
   padding: 10px 40px;
-}
-
-.gender-h1 {
-  margin-left: 20px;
 }
 
 /*spesific page*/
@@ -234,6 +243,10 @@ footer h4 {
   align-items: flex-start;
 }
 
+.contact-form form h1 {
+  margin-top: 0;
+}
+
 .contact-form > * {
   flex: 1;
   display: flex;
@@ -247,7 +260,9 @@ footer h4 {
 }
 
 .contact-img {
-  margin: 30px;
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 /*Checkout page*/
@@ -335,4 +350,84 @@ main.checkout {
   width: 100%;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    left: 20px;
+    right: 20px;
+    text-align: center;
+  }
+
+  .background-image {
+    background-position: -120px center;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+
+  .gender-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1 0 100%;
+  }
+
+  .jacket-product {
+    width: 50%;
+  }
+
+  .gender-products {
+    width: 50%;
+  }
+
+  .tree-img {
+    object-fit: cover;
+    height: 200px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form > * {
+    width: 100%;
+    padding: 30px 30px 0px;
+    box-sizing: border-box;
+  }
+
+  .checkout-main {
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .confirmation section {
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .jacket-product {
+    width: 100%;
+  }
+
+  .gender-products {
+    width: 100%;
+  }
 }

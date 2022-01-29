@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Thank you for your order, visit us again for Rainydays"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>RainyDays</title>
+    <title>Order Confirmation - Rainydays</title>
     <script
       src="https://kit.fontawesome.com/9b22e4c2ba.js"
       crossorigin="anonymous"
@@ -24,16 +34,19 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="checkout.html" class="active">Checkout</a>
-        <a href="search.html"> <i class="fas fa-search"></i> </a>
-        <input
-          class="search-bar"
-          placeholder="Search"
-          type="search"
-          name="question"
-        />
+        <div class="d-flex">
+          <a href="search.html"> <i class="fas fa-search"></i> </a>
+          <input
+            class="search-bar"
+            placeholder="Search"
+            type="search"
+            name="question"
+          />
+        </div>
       </nav>
     </header>
     <main class="confirmation">
+      <h1>Order Confirmation</h1>
       <section class="d-flex">
         <div class="col order-info">
           <p>Your order number is: 000000000</p>
