@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Cheap designer raincoats for stormy weather"
+      content="High quality jackets for a reasonable price"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,36 +15,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Home - Rainydays</title>
+    <title>Jackets - Rainydays</title>
     <script
       src="https://kit.fontawesome.com/9b22e4c2ba.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <img
-        class="logo"
-        src="/images/RainyDaysLogo(1).png"
-        alt="Rainy Days Logo"
-      />
-      <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="jackets.html">Jackets</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a class="cart" href="cart.html"
-          >Cart
-          <ion-icon name="cart-outline"></ion-icon>
-        </a>
-      </nav>
-    </header>
     <main>
-      <section class="fullwidth background-image">
-        <a href="jackets.html" class="cta-button"
-          ><h1>Pushing the Comfort Zone</h1></a
-        >
-      </section>
+      <header>
+        <img
+          class="logo"
+          src="/images/RainyDaysLogo(1).png"
+          alt="Rainy Days Logo"
+        />
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="jackets.html">Jackets</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="cart" href="cart.html"
+            >Cart <ion-icon name="cart-outline"></ion-icon><span>0</span>
+          </a>
+        </nav>
+      </header>
+      <div class="products-container">
+        <div class="product-header">
+          <h5 class="product-title">Product</h5>
+          <h5 class="price">Price</h5>
+          <h5 class="quantity">Quantity</h5>
+          <h5 class="total">Total</h5>
+        </div>
+        <div class="products"></div>
+      </div>
     </main>
     <footer>
       <div class="footer-links">
@@ -67,5 +70,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="/js/base.js"></script>
   </body>
 </html>

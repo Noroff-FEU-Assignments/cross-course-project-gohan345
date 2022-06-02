@@ -29,11 +29,14 @@
         alt="Rainy Days Logo"
       />
       <nav class="nav-links">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="jackets.html">Jackets</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="checkout.html">Checkout</a>
+        <a class="cart" href="cart.html"
+          >Cart
+          <ion-icon name="cart-outline"></ion-icon>
+        </a>
       </nav>
     </header>
     <main>
@@ -41,7 +44,7 @@
       <section class="spesific-list">
         <div class="spesific-product">
           <img
-            src="/images/bluerainjacket.jpg.jpg"
+            src="/images/bluerainjacket.jpg"
             class="blue-img"
             alt="blue raincoat"
           />
@@ -65,5 +68,14 @@
       </div>
       <span>&copy;</span>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/js/base.js"></script>
   </body>
 </html>
