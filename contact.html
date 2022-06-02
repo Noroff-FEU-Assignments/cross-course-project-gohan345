@@ -31,15 +31,6 @@
         <a href="about.html">About</a>
         <a href="contact.html" class="active">Contact</a>
         <a href="checkout.html">Checkout</a>
-        <div class="d-flex">
-          <a href="search.html"> <i class="fas fa-search"></i> </a>
-          <input
-            class="search-bar"
-            placeholder="Search"
-            type="search"
-            name="question"
-          />
-        </div>
       </nav>
     </header>
     <main>
@@ -50,17 +41,29 @@
             class="contact-img"
             alt="man standing in the rain with jacket"
           />
-          <form>
-            <h1>Contact Us</h1>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" />
-            <label for="name">Email</label>
-            <input type="email" id="email" />
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="10"></textarea>
-            <input type="submit" value="Submit" class="gender-button" />
-          </form>
-        </div>
+            <form id="contact-form">
+              <h1>Contact Us</h1>
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" />
+                <small class="error" id="errorName"></small>
+              </div>
+              <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" />
+                <small class="error" id="errorEmail"></small>
+              </div>
+              <div>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="6"></textarea>
+                <small class="error" id="errorMessage"></small>
+              </div>
+              <div>
+                <button type="submit" class="gender-button">Submit</button>
+                <p id="thanks"></p>
+              </div>
+            </form>
+            <script src="/js/contactform.js"></script>
       </section>
     </main>
     <footer>
