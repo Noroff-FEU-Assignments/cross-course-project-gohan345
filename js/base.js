@@ -108,22 +108,31 @@ function showCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector(".products");
+  let cartTotal = document.querySelector(".cart-total");
 
   if (cartItems && productContainer) {
     productContainer.innerHTML = "";
     Object.values(cartItems).map((item) => {
       productContainer.innerHTML += `
         <div class="product">
-        <ion-icon name="close-circle"></ion-icon>
         <img src="images/${item.tag}.jpg"></img>
-        <span>${item.name}</span>
+        <div class="product-information">
+        <strong>${item.name}</strong>        
+        <span class="price">$${item.price}</span>
         </div>
-        <div class="price">${item.price}</div>
-        <div class="quantity">
+        <div class="cart-information">
+        <span class="amount">x${item.inCart}</span>
+        <span class="total">$${item.inCart * item.price},00</span>
         </div>
-
+        </div>
         `;
     });
+
+    if (cartTotal) {
+      let totalCost = localStorage.getItem("totalCost");
+      if (totalCost)
+        cartTotal.innerText = `$${parseFloat(totalCost).toFixed(2)}`;
+    }
   }
 }
 
