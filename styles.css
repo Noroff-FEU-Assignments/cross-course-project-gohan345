@@ -29,7 +29,7 @@ header {
   justify-content: space-evenly;
 }
 
-.logo {
+.logo a {
   width: 15%;
   margin: 10px;
 }
