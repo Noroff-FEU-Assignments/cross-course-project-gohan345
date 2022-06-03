@@ -63,19 +63,25 @@
         </div>
         <div class="checkout-left">
           <h2>Billing Details</h2>
-          <form class="checkout-form">
-            <label for="name">Full Name:</label>
-            <input type="text" class="name-table" id="name" />
-            <label for="adress">Street Adress:</label>
-            <input type="text" class="street-table" id="adress" />
-            <label for="adress">Email Adress (optional):</label>
-            <input type="text" class="email-table" id="email" />
-            <label for="country">Country and Region</label>
-            <select name="countries" id="countries">
-              <option value="norway">Norway</option>
-              <option value="germany">Germany</option>
-              <option value="denmark">Denmark</option>
-            </select>
+          <form id="contact-form" class="checkout-form">
+            <div>
+              <label for="name">Full Name</label>
+              <input type="text" name="name" id="name" />
+              <small class="error" id="nameError"></small>
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" />
+              <small class="error" id="emailError"></small>
+            </div>
+            <div>
+              <label for="address">Addresse</label>
+              <input type="text" name="address" id="address" />
+              <small class="error" id="addressError"></small>
+            </div>
+            <div>
+              <button type="submit" class="gender-button">Confirm!</button>
+            </div>
           </form>
         </div>
       </section>
@@ -93,5 +99,6 @@
       </div>
       <span>&copy;</span>
     </footer>
+    <script src="/js/checkout.js"></script>
   </body>
 </html>
