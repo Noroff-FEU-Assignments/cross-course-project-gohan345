@@ -105,8 +105,7 @@ function totalCost(product) {
 }
 
 function showCart() {
-  let cartItems = localStorage.getItem("productsInCart");
-  cartItems = JSON.parse(cartItems);
+  let cartItems = JSON.parse(localStorage.getItem("productsInCart"));
   let productContainer = document.querySelector(".products");
   let cartTotal = document.querySelector(".cart-total");
 
@@ -115,6 +114,8 @@ function showCart() {
     Object.values(cartItems).map((item) => {
       productContainer.innerHTML += `
         <div class="product">
+        <button onclick="deleteCartItem('${item.tag}')">X</button>
+
         <img src="images/${item.tag}.jpg"></img>
         <div class="product-information">
         <strong>${item.name}</strong>        
@@ -134,6 +135,27 @@ function showCart() {
         cartTotal.innerText = `$${parseFloat(totalCost).toFixed(2)}`;
     }
   }
+}
+
+function deleteCartItem(tag) {
+  let cartItems = JSON.parse(localStorage.getItem("productsInCart"));
+  let products = Object.values(cartItems);
+
+  let newCart = products.filter((item) => item.tag != tag);
+  localStorage.setItem("productsInCart", JSON.stringify(newCart));
+
+  let jacketNumbers = 0;
+  let totalCost = 0;
+
+  newCart.forEach((item) => {
+    jacketNumbers += item.inCart;
+    totalCost += item.price * item.inCart;
+  });
+
+  localStorage.setItem("jacketNumbers", jacketNumbers);
+  localStorage.setItem("totalCost", totalCost);
+
+  showCart();
 }
 
 loadCartNumbers();
