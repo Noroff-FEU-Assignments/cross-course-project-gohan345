@@ -1,30 +1,30 @@
-const contactForm = document.querySelector("form");
+const checkoutForm = document.querySelector("form");
 
-const name = document.querySelector("#name");
-const nameError = document.querySelector("#nameError");
 const email = document.querySelector("#email");
-const emailError = document.querySelector("#emailError");
+const emailErrors = document.querySelector("#emailErrors");
+const name = document.querySelector("#name");
+const nameErrors = document.querySelector("#nameErrors");
 const address = document.querySelector("#address");
-const addressError = document.querySelector("#addressError");
+const addressErrors = document.querySelector("#addressErrors");
 
 const emailPattern = /\S+@\S+\.\S+/;
 
-contactForm.addEventListener("submit", (e) => {
+checkoutForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  nameError.innerText = "";
-  emailError.innerText = "";
-  addressError.innerText = "";
+  nameErrors.innerText = "";
+  emailErrors.innerText = "";
+  addressErrors.innerText = "";
 
   if (name.value == "") {
-    nameError.innerText = "Please provide a name";
+    nameErrors.innerText = "Please provide a name";
   }
 
   if (!emailPattern.test(email.value)) {
-    emailError.innerText = "Provide email-address";
+    emailErrors.innerText = "Provide email-address";
   }
 
   if (!address.value || address.value.length < 10) {
-    addressError.innerText = "Please enter a valid address";
+    addressErrors.innerText = "Please enter a valid address";
   }
 });
