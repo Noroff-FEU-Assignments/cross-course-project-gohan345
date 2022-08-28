@@ -10,10 +10,9 @@ const url = "https://rainydays.sakonsa.one/wp-json/wc/store/products/" + id;
 
 async function getJackets() {
   const response = await fetch(url);
-  const details = await response.json();
+  const jackets = await response.json();
 
-  console.log(details);
-  createHTML(details);
+  createHTML(jackets);
 }
 
 getJackets();
@@ -28,6 +27,6 @@ function createHTML(jackets) {
             alt="${jackets.name}"
           />
           <h2>${jackets.prices.price}</h2>
-          <p>comfortable rain jackets for bad weather</p>
+          <p>${jackets.description}</p>
           <a href="checkout.html" class="spesific-cta">Add to Cart</a>`;
 }
