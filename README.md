@@ -18,6 +18,8 @@
 
 ## Getting Started
 
+### Installing
+
 1. Clone the repo:
 
 ```git clone https://github.com/Noroff-FEU-Assignments/cross-course-project-gohan345.git```
@@ -25,3 +27,16 @@
 2. install
 
 ```npm install```
+
+### Running
+
+```npm run start```
+
+## Contributing
+
+Make sure to have clear commit messages and commit often.
+
+### Contact
+
+Email: sakonpatsamit@gmail.com
+
